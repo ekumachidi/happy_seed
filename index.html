@@ -11,7 +11,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://s3.amazonaws.com/happyfuncorp-cdn/use-happy-seed.png"/>
     <meta property="og:description" content="Roses are red, violets are blue, your code sucks because you’re not using seed."/>
-    <link href="stylesheets/application-4acd8e0a.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/application-e05ab104.css" rel="stylesheet" type="text/css" />
     <!-- = yield :stylesheets -->
     <script src="javascripts/modernizr-d6ac2c8a.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
@@ -30,16 +30,26 @@
           <span class='icon-bar'></span>
           <span class='icon-bar'></span>
         </button>
-        <a class="navbar-brand" href="#happy-seed"><span class='icon icon-seed-logo-white'></span>
+        <a class="navbar-brand" href="/#happy-seed"><span class='icon icon-seed-logo-white'></span>
         Happy Seed
         </a>
       </div>
       <nav class='collapse navbar-collapse' role='navigation'>
         <ul class='nav navbar-nav'>
-          <li><a href="#what">What</a></li>
-          <li><a href="#why">Why</a></li>
-          <li><a href="#how">How</a></li>
-          <li><a href="#who">Who</a></li>
+          <li><a href="/#what">What</a></li>
+          <li><a href="/#why">Why</a></li>
+          <li><a href="/#how">How</a></li>
+          <li><a href="/#who">Who</a></li>
+          <li class='dropdown'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='/docs.html'>Docs</a>
+            <ul class='dropdown-menu'>
+              <li><a href="/docs/">Usage</a></li>
+              <li><a href="/docs/rails.html">Rails</a></li>
+              <li><a href="/docs/plugin.html">Plugins</a></li>
+              <li><a href="/docs/middleman.html">Static</a></li>
+            </ul>
+          </li>
+          <li><a href="http://codex.happyfuncorp.com/tagged/happy_seed">Blog</a></li>
         </ul>
       </nav>
     </header>
@@ -60,7 +70,7 @@
               <div class='col-md-8 col-md-offset-2 mb-1'>
                 <div class='overbracket' data-scroll-reveal='enter bottom but wait 1s over 1s'>
                   <h2 data-scroll-reveal='enter bottom but wait 1.5s over 1.5s'>
-                    Quickly set up a Rails app <br class="visible-xs">with awesome plugins<br>...and get all the pesky details right
+                    Quickly set up a project <br class="visible-xs">with awesome plugins<br>...and get all the pesky details right
                   </h2>
                 </div>
               </div>
@@ -78,7 +88,10 @@
       <div class='container'>
         <div class='row'>
           <div class='right-col'>
-            <h1 class='text-center-sm'>Quickly generate a new app, <br class="hidden-xs">and then get out of the&nbsp;way</h1>
+            <h1 class='text-center-sm'>
+              Quickly generate a new app, <br class="hidden-xs">and then get out of the&nbsp;way.
+              <br>Rails, Middleman, and more.
+            </h1>
           </div>
         </div>
         <div class='row'>
@@ -157,7 +170,7 @@
               <li><a href="http://rspec.info">rspec</a></li>
               <li><a href="https://github.com/thoughtbot/factory_girl">factory_girl</a></li>
               <li><a href="https://github.com/bblimke/webmock">webmock</a></li>
-              <li><a href="http://autotest.github.io">autotest</a></li>
+              <li><a href="http://guardgem.org">guard</a></li>
               <li>Plugin generator to write your own rails extensions</li>
             </ul>
           </div>
@@ -191,56 +204,58 @@
           <div class='right-col'>
             <h2>Install the gem</h2>
             <pre>$ gem install happy_seed</pre>
-            <h2>This creates the rails plugin on your system.</h2>
+            <h2>This creates the Rails plugin on your system.</h2>
             <p>
               There is a small application template that is used to start the app, which itself includes the happy_seed gem.  This exposes the rail generators and templates to your project, which is how functionality gets installed.
+              <h2>Generate a new rails app</h2>
+              <pre>$ happy_seed rails app_name</pre>
+              <h2>Now create!</h2>
+              <p>
+                You will get prompted for what you want to install.
+                <a href="/docs/rails.html">Read more about it!</a>
+              </p>
+              <h2>Start editing!</h2>
+              <p>The seed gem itself is a set of generators, and only that.  Functionality is either copied directly into your application, or included via a gem.</p>
+              <p>Since a lot of the generators alter routes, when you destroy a generator (for example the splash page) it may not leave your routes in the correct state.</p>
             </p>
-            <h2>Generate a new app</h2>
-            <pre>$ happy_seed app_name</pre>
-            <h2>Now create!</h2>
-            <p>You will get prompted for what you want to install.</p>
-            <p>Documentation for the current generators are:</p>
-            <ul>
-              <li>The application template</li>
-              <li><a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/base/templates/docs/README.00.base.rdoc">happy_seed:base</a></li>
-              <li>
-                <a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/bootstrap/templates/docs/README.01.bootstrap.rdoc">happy_seed:bootstrap</a>
-                <ul>
-                  <li><a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/splash/templates/docs/README.02.splash.rdoc">happy_seed:splash</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/devise/templates/docs/README.03.devise.rdoc">happy_seed:devise</a>
-                <ul>
-                  <li>
-                    <a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/omniauth/templates/docs/README.04.omniauth.rdoc">happy_seed:omniauth</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/twitter/templates/docs/README.05.twitter.rdoc">happy_seed:twitter</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/facebook/templates/docs/README.06.facebook.rdoc">happy_seed:facebook</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/instagram/templates/docs/README.05.instagram.rdoc">happy_seed:instagram</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/admin/templates/docs/README.07.admin.rdoc">happy_seed:admin</a>
-              </li>
-              <li>
-                <a href="https://github.com/happyfuncode/happy_seed/blob/master/lib/generators/happy_seed/angular_install/templates/docs/README.10.angular_install.rdoc">happy_seed:angular_install</a>
-              </li>
-            </ul>
-            <h2>Start editing!</h2>
-            <p>The seed gem itself is a set of generators, and only that.  Functionality is either copied directly into your application, or included via a gem.</p>
-            <p>Since a lot of the generators alter routes, when you destroy a generator (for example the splash page) it may not leave your routes in the correct state.</p>
-            <h2>Rails is very modular</h2>
-            <p>If you want to extract some functionality of your own application, rails plugins are the way to go. We like autotest and rspec, which was always tricky to configure, so we packaged that up to!</p>
-            <pre>$ happy_seed_plugin acts_as_awesome</pre>
-            <p>Or if you want to make an engine</p>
-            <pre>$ happy_seed_plugin acts_as_awesome --mountable</pre>
+            <div class='doc-group'>
+              <div class='doc-col'>
+                <h2>Rails Plugins</h2>
+                <p>If you want to extract some functionality of your own application, rails plugins are the way to go. We like autotest and rspec, which was always tricky to configure, so we packaged that up to!</p>
+                <pre>$ happy_seed plugin acts_as_awesome</pre>
+                <p>
+                  <a href="/docs/plugin.html">Read more</a>
+                  about it!
+                </p>
+              </div>
+              <div class='doc-col'>
+                <h2>Rails Engines</h2>
+                <p>Or if you want to make an engine</p>
+                <pre>$ happy_seed engine acts_as_awesome</pre>
+                <p>
+                  <a href="/docs/plugin.html">Read more</a>
+                  about it!
+                </p>
+              </div>
+            </div>
+            <div class='doc-group'>
+              <div class='doc-col'>
+                <h2>Middleman static site</h2>
+                <pre>$ happy_seed static static_site</pre>
+                <p>
+                  <a href="/docs/middleman.html">Read more</a>
+                  about it!
+                </p>
+              </div>
+              <div class='doc-col'>
+                <h2>Middleman static blog</h2>
+                <pre>$ happy_seed static_blog static_site</pre>
+                <p>
+                  <a href="/docs/middleman.html">Read more</a>
+                  about it!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
