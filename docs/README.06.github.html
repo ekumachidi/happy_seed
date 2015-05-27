@@ -60,36 +60,32 @@
       <div class='container'>
         <div class='row'>
           <div class='col-sm-10 col-sm-push-2'>
-            <h1>HappySeed Twitter Install</h1>
+            <h1>HappySeed Github Install</h1>
             
             <h3>What does this do?</h3>
             
-            <p>The <code>happy_seed:twitter</code> depends upon <code>happy_seed:omniauth</code> and</p>
+            <p>The <code>happy_seed:github</code> depends upon <code>happy_seed:omniauth</code> and</p>
             
             <ul>
-            <li>Installs twitter authentication</li>
-            <li>Installs links in the nav bar and use signup/signin pages</li>
+            <li>Installs github authentication</li>
+            <li>Installs github api gem</li>
             </ul>
             
             <h3>Why do you want this?</h3>
             
-            <p>If you want to have the user connect via twitter, this is the one line command for it.</p>
+            <p>If you want to have the user connect via github, this is the one line command for it.</p>
             
             <h3>Environment Variables</h3>
             
-            <pre><code>  TWITTER_APP_ID=&#x000A;  TWITTER_APP_SECRET=&#x000A;</code></pre>
+            <pre><code>  GITHUB_APP_ID=&#x000A;  GITHUB_APP_SECRET=&#x000A;</code></pre>
             
             <h3>What needs to be done?</h3>
             
-            <p>Go to twitter.com and sign up for an application.  Since you need to set the callbacks as urls, you&#39;ll need to create one app for local development and another app for production.  (Possibly one for staging as well.)</p>
+            <p>In config/initializers/devise.rb make sure that the scope you are requesting is correct.</p>
             
-            <p>Allow the application to sign in with twitter.</p>
+            <p>Since you need to set the callbacks as urls, you&#39;ll need to create one app for local development and another app for production.  (Possibly one for staging as well.)</p>
             
-            <p><a href="https://apps.twitter.com">https://apps.twitter.com</a></p>
-            
-            <p>Also see more: </p>
-            
-            <p><a href="http://willschenk.com/scripting-twitter/">http://willschenk.com/scripting-twitter/</a></p>
+            <p><a href="https://github.com/settings/applications">https://github.com/settings/applications</a></p>
           </div>
           <div class='col-sm-2 col-sm-pull-10'>
             <ul class='nav nav-pills nav-stacked'>
@@ -123,13 +119,13 @@
               <li>
                 <a href="/docs/README.05.instagram.html"> - Instagram</a>
               </li>
-              <li class='active'>
+              <li>
                 <a href="/docs/README.05.twitter.html"> - Twitter</a>
               </li>
               <li>
                 <a href="/docs/README.06.facebook.html"> - Facebook</a>
               </li>
-              <li>
+              <li class='active'>
                 <a href="/docs/README.06.github.html"> - Github</a>
               </li>
               <li>

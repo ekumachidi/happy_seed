@@ -60,36 +60,32 @@
       <div class='container'>
         <div class='row'>
           <div class='col-sm-10 col-sm-push-2'>
-            <h1>HappySeed Twitter Install</h1>
+            <h1>HappySeed API Install</h1>
             
             <h3>What does this do?</h3>
             
-            <p>The <code>happy_seed:twitter</code> depends upon <code>happy_seed:omniauth</code> and</p>
+            <p>The <code>happy_seed:api</code> generator</p>
             
             <ul>
-            <li>Installs twitter authentication</li>
-            <li>Installs links in the nav bar and use signup/signin pages</li>
+            <li>Installs <code>apitome</code></li>
+            <li>Installs <code>rspec_api_documentation</code></li>
             </ul>
             
             <h3>Why do you want this?</h3>
             
-            <p>If you want to have the user connect via twitter, this is the one line command for it.</p>
+            <p>This allows you to invite users to the site and have them sign up through a link.</p>
             
             <h3>Environment Variables</h3>
             
-            <pre><code>  TWITTER_APP_ID=&#x000A;  TWITTER_APP_SECRET=&#x000A;</code></pre>
+            <p>na</p>
             
             <h3>What needs to be done?</h3>
             
-            <p>Go to twitter.com and sign up for an application.  Since you need to set the callbacks as urls, you&#39;ll need to create one app for local development and another app for production.  (Possibly one for staging as well.)</p>
+            <p>After you update your specs in spec/acceptance, run</p>
             
-            <p>Allow the application to sign in with twitter.</p>
+            <pre><code>rake docs:generate&#x000A;</code></pre>
             
-            <p><a href="https://apps.twitter.com">https://apps.twitter.com</a></p>
-            
-            <p>Also see more: </p>
-            
-            <p><a href="http://willschenk.com/scripting-twitter/">http://willschenk.com/scripting-twitter/</a></p>
+            <p>to output the files into the docs/api directory.</p>
           </div>
           <div class='col-sm-2 col-sm-pull-10'>
             <ul class='nav nav-pills nav-stacked'>
@@ -102,7 +98,7 @@
               <li>
                 <a href="/docs/README.00.base.html"> - Base</a>
               </li>
-              <li>
+              <li class='active'>
                 <a href="/docs/README.01.api.html"> - Api</a>
               </li>
               <li>
@@ -123,7 +119,7 @@
               <li>
                 <a href="/docs/README.05.instagram.html"> - Instagram</a>
               </li>
-              <li class='active'>
+              <li>
                 <a href="/docs/README.05.twitter.html"> - Twitter</a>
               </li>
               <li>
