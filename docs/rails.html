@@ -11,7 +11,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://s3.amazonaws.com/happyfuncorp-cdn/use-happy-seed.png"/>
     <meta property="og:description" content="Roses are red, violets are blue, your code sucks because you’re not using seed."/>
-    <link href="../stylesheets/application-82ef1a51.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/socicons-d8ab83dd.css" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/application-75b5fa9a.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/socicons-d8ab83dd.css" rel="stylesheet" type="text/css" />
     <!-- = yield :stylesheets -->
     <script src="../javascripts/modernizr-d6ac2c8a.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
@@ -51,7 +51,7 @@
             </ul>
           </li>
           <li><a href="http://codex.happyfuncorp.com/tags/seed.html">Blog</a></li>
-          <li><a href="https://github.com/HappyFunCorp/happy_seed/blob/master/CHANGELOG.md">0.0.16</a></li>
+          <li><a href="https://github.com/HappyFunCorp/happy_seed/blob/master/CHANGELOG.md">0.0.17</a></li>
         </ul>
       </nav>
     </header>
@@ -70,6 +70,95 @@
               and then you are prompted to see what other generators you want to run.
             </p>
             <p>You should be able to run these generators at any time.  Some require the use of others (for example, sign in with twitter requires devise) and they will generally check to make sure that their dependancies are met.</p>
+            <section class='cream over' id='what'>
+              <div class='background'></div>
+              <div class='container'>
+                <div class='row'>
+                  <div class='left-col'>
+                    <h2 class='icon icon-solid-gems'>Solid Gems</h2>
+                  </div>
+                  <div class='right-col'>
+                    <h3>Stand on the shoulders of giants. Use only what you&nbsp;need.</h3>
+                    <ul class='checkmarked'>
+                      <li>
+                        Follows
+                        <a href="http://12factor.net/">12 factors</a>
+                      </li>
+                      <li>
+                        Can easily be deployed to
+                        <a href="http://heroku.com">heroku</a>
+                        with foreman/Procfile
+                      </li>
+                      <li>
+                        <a href="http://getbootstrap.com/">bootstrap</a>
+                        with clean layout structure
+                      </li>
+                      <li>
+                        <a href="http://haml.info">haml</a>
+                        templates, upgraded rails scaffold templates to work with bootstap
+                      </li>
+                      <li>
+                        <a href="https://github.com/kpumuk/meta-tags">metatag</a>
+                        setup for SEO
+                      </li>
+                      <li>
+                        <a href="https://github.com/plataformatec/devise">devise</a>
+                        for user authentication
+                      </li>
+                      <li>
+                        <a href="https://github.com/intridea/omniauth">omniauth</a>
+                        for oauth support
+                      </li>
+                      <li>
+                        <a href="https://angularjs.org">angular</a>
+                        installer that fits with the rails asset pipeline
+                      </li>
+                      <li>
+                        <a href="http://activeadmin.info">active_admin</a>
+                        for admin panel
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='left-col'>
+                    <h2 class='icon icon-sensible-defaults'>Sensible Defaults</h2>
+                  </div>
+                  <div class='right-col'>
+                    <h3>Get it working quickly and start&nbsp;customizing</h3>
+                    <ul class='checkmarked'>
+                      <li><span><a href="http://puma.io">puma</a></span><span> configured</span>
+                      </li>
+                      <li>Basic layout/navbar structure included</li>
+                      <li>Devise user models</li>
+                      <li>Omniauth Callback Controller</li>
+                      <li>Twitter, Facebook, Instrgram integration optionally wired up</li>
+                      <li>Site nav structure</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class='left-col'>
+                    <h2 class='icon icon-more-awesome-stuff'>More awesome stuff</h2>
+                  </div>
+                  <div class='right-col'>
+                    <h3>Why stop there?</h3>
+                    <ul class='checkmarked'>
+                      <li>Splash page template</li>
+                      <li>Mailchimp signup form</li>
+                      <li><a href="http://rspec.info">rspec</a></li>
+                      <li><a href="https://github.com/thoughtbot/factory_girl">factory_girl</a></li>
+                      <li><a href="https://github.com/bblimke/webmock">webmock</a></li>
+                      <li><a href="https://github.com/vcr/vcr">vcr</a></li>
+                      <li><a href="https://github.com/stympy/faker">faker</a></li>
+                      <li><a href="https://github.com/zipmark/rspec_api_documentation">rspec_api_documentation</a></li>
+                      <li><a href="http://guardgem.org">guard</a></li>
+                      <li>Plugin generator to write your own rails extensions</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
             <p>Documentation for the current generators are:</p>
             <ul>
               <li>The application template</li>
@@ -269,7 +358,7 @@
         </div>
       </div>
     </footer>
-    <script src="../javascripts/all-241eb5d2.js" type="text/javascript"></script>
+    <script src="../javascripts/all-08a15019.js" type="text/javascript"></script>
     <script type="text/javascript">
       var _gaq=[['_setAccount','UA-20250697-7'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
@@ -277,7 +366,7 @@
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
     <!-- # - unless mobile_device? -->
-    <script src="../javascripts/scrollReveal-f49d5551.js" type="text/javascript"></script>
+    <!-- # = javascript_include_tag 'scrollReveal.js' -->
     <script>
       $(function() { 
         window.scrollReveal = new scrollReveal();
