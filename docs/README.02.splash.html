@@ -51,7 +51,7 @@
             </ul>
           </li>
           <li><a href="http://codex.happyfuncorp.com/tags/seed.html">Blog</a></li>
-          <li><a href="https://github.com/HappyFunCorp/happy_seed/blob/master/CHANGELOG.md">0.0.18</a></li>
+          <li><a href="https://github.com/HappyFunCorp/happy_seed/blob/master/CHANGELOG.md">0.0.19</a></li>
         </ul>
       </nav>
     </header>
@@ -78,6 +78,12 @@
             
             <p>The splash controller uses a seperate splash layout, which lets you isolate the design of the splash page from the overall content and look and feel of your application.</p>
             
+            <h2>Walkthrough</h2>
+            
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://www.youtube.com/embed/wb51M6I3I8g?rel=0" allowfullscreen></iframe>
+            </div>
+            
             <h3>Environment Variables</h3>
             
             <p>This is for the mailchimp signup form.</p>
@@ -86,9 +92,15 @@
             
             <h3>What needs to be done?</h3>
             
-            <p>Style the page by editing assets/stylesheets/slash.css.scss, views/splash/index.html.haml, and views/layouts/splash</p>
+            <p>Style the page by editing assets/stylesheets/slash.css.scss, views/splash/index.html.haml, and views/layouts/splash.html.haml</p>
             
-            <p>Sign up for mailchimp, get your api key, create a mailing list and setup the environment.</p>
+            <ol>
+            <li>Signup for mailchimp: <a href="https://login.mailchimp.com/signup">https://login.mailchimp.com/signup</a></li>
+            <li>Activate your account</li>
+            <li>Create a mailing list: List -&gt; Create List</li>
+            <li>Get list ID (Settings -&gt; List name and defaults) for MAILCHIMP<em>SPLASH</em>SIGNUP<em>LIST</em>ID</li>
+            <li>Get MAILCHIMP<em>API</em>KEY (Your name -&gt; Account -&gt; Extras -&gt; API Keys)</li>
+            </ol>
           </div>
           <div class='col-sm-2 col-sm-pull-10'>
             <ul class='nav nav-pills nav-stacked'>
